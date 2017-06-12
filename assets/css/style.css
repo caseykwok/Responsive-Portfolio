@@ -136,9 +136,12 @@ a:hover {
 	height: 40%;
 	margin-top: 5px;
 	margin-right: 20px;
+	-moz-transform: rotate(90deg);
+	-ms-transform:rotate(90deg);
+	-o-transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    width: 40%;
+	transform: rotate(90deg);
+	width: 40%;
 }
 
 .body_connect {
