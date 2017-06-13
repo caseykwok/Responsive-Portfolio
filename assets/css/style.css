@@ -80,7 +80,7 @@ body {
 
 .main_options {
 	float: right;
-	margin-right: 3%;
+	margin-right: 3%; /*should match the 6% margin-left of header 1 but since there is already padding within each about, portfolio, and contact option, need to make this margin-right slightly smaller; hence, 3%*/
 	text-align: center;
 	padding: 20px;
 }
@@ -114,12 +114,12 @@ a:hover {
 
 .body_border {
 	border: 1px solid #dddddd;
-	float: left;
+	float: left; /*float needed to ensure 'Connect With Me' stays on the same line as the body content*/
 	margin-bottom: 30px;
-	margin-left: 6%;
+	margin-left: 6%; /*6% margin-left to match 6% margin-left of header 1*/
 	margin-top: 30px;
 	padding: 30px;
-	width: 50%;
+	width: 50%; /*this body content takes up 50% of the screen*/
 }
 
 .body_content_hr {
@@ -132,7 +132,7 @@ a:hover {
 }
 
 .profile_image {
-	float: left;
+	float: left; /*float left of picture needed to make sure the text wraps around the image*/
 	height: 40%;
 	margin-top: 5px;
 	margin-right: 20px;
@@ -148,10 +148,10 @@ a:hover {
 	border: 1px solid #dddddd; 
 	float: right;
 	/*margin-left: 30px;*/
-	margin-right: 6%;
+	margin-right: 6%; /*6% margin-right to match the 6% margin-left of header 1 and body border*/
 	margin-top: 30px;
 	padding: 30px;
-	width: 18%;
+	width: 18%; /*thid body connect takes up 18% of the screen*/
 }
 
 .header_3 {
@@ -170,8 +170,8 @@ a:hover {
 
 .body_connect_icons {
 	float: left;
-	height: 27%;
-	width: 27%;
+	height: 27%; /*height is not 33% to account for the padding*/
+	width: 27%; /*width is not 33% to account for the padding*/
 	padding: 3%;
 }
 
@@ -190,19 +190,19 @@ a:hover {
 
 .form_customization_1 {
 	border: 1px solid #dddddd;
-	box-sizing: border-box;
+	box-sizing: border-box; /*make the input box match the width of body_border*/
 	color: #777777;
 	margin: 10px 0px;
-	padding: 8px;
+	padding: 8px; /*create padding around the words typed into the input box*/
 	width: 100%;
 }
 
 .form_customization_2 {
 	border: 1px solid #dddddd;
-	box-sizing: border-box;
+	box-sizing: border-box; /*make the input box match the width of body_border*/
 	color: #777777;
 	margin: 10px 0px;
-	padding: 8px;
+	padding: 8px; /*create padding around the words typed into the input box*/
 	width: 100%;
 }
 
@@ -219,29 +219,29 @@ a:hover {
 }
 
 .form_style input::-webkit-input-placeholder {
-	color: #bbc0c9;
+	color: #bbc0c9; /*change the placeholder text into a lighter shade of grey*/
 }
 
 .left {
-	float: left;
-	padding-right: 2.5%;
-	width: 47.5%;
+	float: left; /*float left needed to make sure the left and right column images stay as two columns instead of one column*/
+	padding-right: 2.5%; /*padding to create the space between the two columns*/
+	width: 47.5%; /*each column takes up only around half of the parent body_border container*/
 }
 
 .left_images {
 	padding-top: 20px;
-	width: 100%;
+	width: 100%; /*each image takes up the entire column*/
 }
 
 .right {
-	float: left;
-	padding-left: 2.5%;
-	width: 47.5%;
+	float: left; /*float left needed to make sure the left and right column images stay as two columns instead of one column*/
+	padding-left: 2.5%; /*padding to create the space between the two columns*/
+	width: 47.5%; /*each column takes up only around half of the parent body_border container*/
 }
 
 .right_images {
 	padding-top: 20px;
-	width: 100%;
+	width: 100%; /*each image takes up the entire column*/
 }
 
 .relative {
@@ -251,8 +251,8 @@ a:hover {
 .absolute {
 	padding-top: 3%;
 	padding-bottom: 3%;
-	position: absolute;
-	top: 75%;
+	position: absolute; /*needed to make sure the portfolio labels are not beneath the pictures but rather on top of the pictures*/
+	top: 75%; /*distance from the top of the parent container to the beginning of the label is 75%*/
 	text-align: center;
 	width: 100%;
 }
@@ -261,16 +261,16 @@ a:hover {
 	.profile_image {
 		height: 100%;
 		margin-bottom: 20px;
-		width: 100%;
+		width: 100%; /*at 980px, the picture takes up the entire div so the width is set to 100% of the parent container*/
 	}
 
 	.left {
-		padding-right: 0px;
+		padding-right: 0px; /*at 980px, the portfolio pictures become one column so there is no need to create a space between the two columns*/
 		width: 100%;
 	}
 
 	.right {
-		padding-left: 0px;
+		padding-left: 0px; /*at 980px, the portfolio pictures become one column so there is no need to create a space between the two columns*/
 		width: 100%;
 	}
 
@@ -278,7 +278,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
 	.header_1 {
-		margin-left: 3%;
+		margin-left: 3%; /*original margin-left of 6%*/
 	}
 
 	.main_options {
@@ -286,56 +286,56 @@ a:hover {
 	}
 
 	.body_border {
-		box-sizing: border-box;
-		margin-left: 3%;
-		margin-right: 3%;
-		width: 94%;
+		box-sizing: border-box; /*specifies the width and height of body_border includes content, padding, and border but not margin*/
+		margin-left: 3%; /*match the margin-left of header 1*/
+		margin-right: 3%; /*match the margin-left of header 1*/
+		width: 94%; /*width of 94% instead of 100% to account for the margin-left and margin-right*/
 	}
 	
 	.body_connect {
-		clear: both;
-		box-sizing: border-box;
-		margin-bottom: 30px;
-		margin-left: 3%;
-		margin-right: 3%;
+		clear: both; /*unnecesssary*/
+		box-sizing: border-box; /*specifies the width and height of body_border includes content, padding, and border but not margin*/
+		margin-bottom: 30px; 
+		margin-left: 3%; /*match the margin-left of body_border*/
+		margin-right: 3%; /*match the margin-left of body_border*/
 		margin-top: 0px;
-		width: 94%;
+		width: 94%; /*width of 94% instead of 100% to account for the margin-left and margin-right*/
 	}
 
 	.body_connect_icons {
-		float: left;
-		height: 50px;
+		float: left; /*unnecesssary*/
+		height: 50px; /*specify the height and width to make the icons smaller*/
 		padding: 1%;
-		width: 50px;
+		width: 50px; /*specify the height and width to make the icons smaller*/
 	}
 
 	.profile_image {
-		height: 40%;
+		height: 40%; /*change the height and width of profile image back to how it was defined at first to match the original look*/
 		margin-bottom: 0px;
-		width: 40%;
+		width: 40%; /*change the height and width of profile image back to how it was defined at first to match the original look*/
 	}
 
 	.left {
-		padding-right: 2.5%;
-		width: 47.5%;
+		padding-right: 2.5%; /*change the portfolio images back to two columns and how it was defined at first*/
+		width: 47.5%; /*change the portfolio images back to two columns and how it was defined at first*/
 	}
 
 	.right {
-		padding-left: 2.5%;
-		width: 47.5%;
+		padding-left: 2.5%; /*change the portfolio images back to two columns and how it was defined at first*/
+		width: 47.5%; /*change the portfolio images back to two columns and how it was defined at first*/
 	}
 }
 
 @media screen and (max-width: 640px) {
 	.header_1 {
-		margin-left: 0px;
-		padding: 20px 0px;
-		width: 100%;
+		margin-left: 0px; /*give it 0px because the teal background header takes up the entire width of the page*/
+		padding: 20px 0px; /*needed to recenter the entire teal background*/
+		width: 100%; /*teal background header takes up the entire width of the page*/
 	}
 
 	.main_options {
-		padding: 20px 0px;
-		width: 100%;
+		padding: 20px 0px; /*needed to recenter the entire header options*/
+		width: 100%; /*about, portfolio, and contact options takes up the entire width of the page*/
 	}
 
 	.about_portfolio_contact {
@@ -344,18 +344,18 @@ a:hover {
 	}
 
 	.profile_image {
-		height: 100%;
+		height: 100%; 
 		margin-bottom: 20px;
-		width: 100%;
+		width: 100%; /*at 640px, the picture takes up the entire div so the width is set to 100% of the parent container*/
 	}
 
 	.left {
-		padding-right: 0px;
-		width: 100%;
+		padding-right: 0px; /*at 640px, the portfolio pictures become one column so there is no need to create a space between the two columns*/
+		width: 100%; /*at 980px, the portfolio pictures become one column so there is no need to create a space between the two columns*/
 	}
 
 	.right {
-		padding-left: 0px;
-		width: 100%;
+		padding-left: 0px; /*at 980px, the portfolio pictures become one column so there is no need to create a space between the two columns*/
+		width: 100%; /*at 980px, the portfolio pictures become one column so there is no need to create a space between the two columns*/
 	}
 }
